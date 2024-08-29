@@ -42,6 +42,7 @@ class PDFProcessorApp(ctk.CTk):
             self.input_entry.insert(0, folder_path)
 
     def pdf_to_images(self, pdf_path, output_folder):
+        print(f"Processing {pdf_path}...")
         if not os.path.exists(output_folder):
             os.makedirs(output_folder)
 
